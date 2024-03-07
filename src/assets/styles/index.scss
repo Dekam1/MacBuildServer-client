@@ -1,0 +1,328 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+	font-size: 16px;
+	color: #21243D;
+	font-family: "Heebo", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 858px;
+}
+
+.header {
+	padding: 27px 71px;
+
+	&__menu {
+		padding-right: 60px;
+	}
+
+	&__container {
+		padding: 27px 60px 71px 148px;
+	}
+
+	&__body {
+		padding-top: 162px;
+	}
+}
+
+.button {
+	color: #FFFFFF;
+	background-color: #FF6464;
+	border-radius: 2px;
+	border: none;
+}
+
+.menu {
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+
+	&__item:not(:last-child) {
+		& a {
+			color: #000000;
+		}
+
+		margin-right: 33px;
+	}
+
+	&__button,
+	& button {
+		padding: 2px 10px;
+	}
+}
+
+.body {
+	&__left {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		align-items: flex-start;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		padding-top: 18px;
+		font-weight: 700;
+		font-size: 44px;
+		line-height: 60px;
+		width: 506px;
+	}
+
+	&__text {
+		width: 497px;
+	}
+
+	&__button {
+		height: 47px;
+		cursor: pointer;
+		width: 208px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 20px;
+	}
+}
+
+.main {
+	flex: 1 1 auto;
+
+	&__section-1 {
+		padding: 27px 32px;
+		background-color: #EDF7FA;
+	}
+
+	&__header {
+		margin-bottom: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		& span {
+			font-size: 22px;
+		}
+
+		& a {
+			color: #00A8CC;
+		}
+	}
+
+	&__section-2 {
+		padding: 27px 83px;
+	}
+}
+
+
+.card {
+	display: flex;
+	column-gap: 20px;
+
+	&__item {
+		padding: 24px 21px 28px 24px;
+	}
+}
+
+.card-item {
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 25%);
+
+	&__title {
+		font-size: 26px;
+		font-weight: 700;
+		color: #21243D;
+	}
+
+	&__wrapper {
+		margin-top: 17px;
+		display: flex;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			height: 21px;
+			width: 1px;
+			background-color: #000000;
+			position: absolute;
+			left: 130px;
+			top: calc(50% - 10.5px);
+		}
+
+		& span {
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		margin-top: 11px;
+	}
+}
+
+.works {
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 31px;
+		}
+
+		padding-bottom: 15px;
+	}
+}
+
+.work-item {
+	border-bottom: 1px solid #E0E0E0;
+
+	&__wrapper {
+		display: flex;
+		column-gap: 18px;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	&__info {
+		margin-bottom: 17px;
+
+		& span:first-child {
+			margin-right: 26px;
+			display: inline-block;
+			width: 62px;
+			height: 25px;
+			text-align: center;
+			background-color: #142850;
+			color: #FFFFFF;
+			font-weight: 900;
+			font-size: 18px;
+			border-radius: 16px;
+		}
+
+		& span:last-child {
+			font-size: 20px;
+			color: #8695A4;
+		}
+	}
+}
+
+.footer {
+	padding: 54px 0px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__text {
+		margin-top: 26px;
+		font-size: 14px;
+	}
+}
+
+.social {
+	display: flex;
+
+	&__item:not(:last-child) {
+		margin-right: 35px;
+	}
+}
+
+.form {
+	width: 500px;
+	box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 25%);
+	border-radius: 5px;
+	min-height: 273px;
+
+	&__container {
+		padding: 20px 10px;
+	}
+
+	&__email,
+	&__password {
+		padding: 5px 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	& label {
+		font-weight: 500;
+	}
+
+	& input {
+		padding: 5px;
+		border: 1px solid gray;
+		border-radius: 5px;
+		font-size: 17px;
+		outline: none;
+
+		&:hover {
+			border: 1px solid #FF6464;
+		}
+
+		&:active {
+			outline: 2px solid #FF6464;
+		}
+	}
+
+	&__error {
+		padding-left: 10px;
+		width: 100%;
+		color: red;
+	}
+
+	&__button {
+		width: 150px;
+		padding: 5px 0px;
+		font-size: 17px;
+		font-weight: 500;
+		cursor: pointer;
+	}
+}
